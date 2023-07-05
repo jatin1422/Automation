@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="PW_Smoke.PW_Listeners"></listener>
+	</listeners>
+	<test parallel="classes" thread-count="10" name="Test">
+		<classes>
+			<class name="PW_Smoke.Allergy_Immunology_Sub_Link_Check" />
+			<class name="PW_Smoke.Neurology_Link_Check" />
+			<class name="PW_Smoke.Cardiology_Link_Check" />
+			<class name="PW_Smoke.Pain_Link_Check" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

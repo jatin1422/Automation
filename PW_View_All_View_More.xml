@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="PW_Smoke.PW_Listeners"></listener>
+	</listeners>
+	<test parallel="classes" thread-count="5" name="Test">
+		<classes>
+			<class name="PW_Smoke.Deep_Dives_Peer_to_Peer_View_All" />
+			<class name="PW_Smoke.Gastroenterology_Subcat_Link_Check" />
+			<class name="PW_Smoke.Homepage_Viewmore_Viewall_Clickability" />
+			<class name="PW_Smoke.Rheumatology_Link_Check" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

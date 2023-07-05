@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="PW_Smoke.PW_Listeners"></listener>
+	</listeners>
+	<test parallel="classes" thread-count="10" name="Test">
+		<classes>
+			<class name="PW_Smoke.Pulmonology_Link_Check" />
+			<class name="PW_Smoke.Psychiatry_Link_Check" />
+			<class name="PW_Smoke.Primary_Care_Link_Check" />
+			<class name="PW_Smoke.Urology_Link_Check" />
+			<class name="PW_Smoke.Deep_Dives_Conditional_Spotlight_Sub_Cat_View_All" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" thread-count="2" name="Suite">
+	<listeners>
+		<listener class-name="PW_Smoke.PW_Pass_Screenshot"></listener>
+	</listeners>
+	<test parallel="classes" thread-count="2" name="Allergy_Articals_Subscribe_letter">
+		<classes>
+			<class name="PW_Smoke.Allergy_Articals_Subscribe_letter"></class>
+			<class name="PW_Smoke.Meeting_Coverage_View_All_View_More" />
+		</classes>
+	</test>
+	<test name="Searchfeed">
+		<classes>
+			<class name="PW_Smoke.Search_Feed_Articles"></class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

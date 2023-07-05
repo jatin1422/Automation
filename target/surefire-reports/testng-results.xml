@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-20T17:32:48 IST" name="Suite" finished-at="2023-06-20T17:36:47 IST" duration-ms="238727">
+    <groups>
+    </groups>
+    <test started-at="2023-06-20T17:32:48 IST" name="Searchfeed" finished-at="2023-06-20T17:36:47 IST" duration-ms="238727">
+      <class name="PW.Search_Feed_Articles">
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:32:48 IST" name="setup" finished-at="2023-06-20T17:32:53 IST" duration-ms="5191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Homepage()[pri:1, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:32:53 IST" name="Homepage" finished-at="2023-06-20T17:33:35 IST" duration-ms="41304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:33:35 IST" name="teardown" finished-at="2023-06-20T17:33:35 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:33:35 IST" name="setup" finished-at="2023-06-20T17:33:36 IST" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="_2mm()[pri:2, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:33:36 IST" name="_2mm" finished-at="2023-06-20T17:35:09 IST" duration-ms="92809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _2mm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:35:09 IST" name="teardown" finished-at="2023-06-20T17:35:09 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:35:09 IST" name="setup" finished-at="2023-06-20T17:35:10 IST" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Pubmed()[pri:3, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:35:10 IST" name="Pubmed" finished-at="2023-06-20T17:36:46 IST" duration-ms="96859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pubmed -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:PW.Search_Feed_Articles@35841320]" started-at="2023-06-20T17:36:47 IST" name="teardown" finished-at="2023-06-20T17:36:47 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- PW.Search_Feed_Articles -->
+    </test> <!-- Searchfeed -->
+  </suite> <!-- Suite -->
+</testng-results>
