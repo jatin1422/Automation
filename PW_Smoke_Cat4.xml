@@ -4,9 +4,9 @@
 	<listeners>
 		<listener class-name="PW_Smoke.PW_Listeners"></listener>
 	</listeners>
-	<test parallel="classes" thread-count="10" name="Test">
+	<test parallel="classes" thread-count="5" name="Test">
 		<classes>
-			<class name="PW_Smoke.Ophthalmology_Link_Check" />
+			<class name="PW_Smoke.Deep_Dives_Conditional_Spotlight_Sub_Cat_View_All" />
 			<class name="PW_Smoke.Dermatology_Link_Check" />
 			<class name="PW_Smoke.Oncology_Hematology_Link_Check" />
 			<class name="PW_Smoke.Surgery_Link_Check" />

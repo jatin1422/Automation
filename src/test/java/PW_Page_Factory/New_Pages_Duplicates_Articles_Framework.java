@@ -1,7 +1,9 @@
 package PW_Page_Factory;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.logging.log4j.core.util.Integers;
 import org.openqa.selenium.By;
@@ -30,10 +32,10 @@ public class New_Pages_Duplicates_Articles_Framework extends Abst {
 
 	By catagories_new_pages_sub_cat_tabs = By.xpath("//ul[@class='et-menu nav']//li//a");
 
-	@FindBy(xpath = "//div[@role='navigation']//div[@role='navigation']")
+	@FindBy(xpath = "(//div[@role='navigation'])[1]")
 	WebElement Pagination;
 
-	By pagination = By.xpath("//div[@role='navigation']//div[@role='navigation']");
+	By pagination = By.xpath("(//div[@role='navigation'])[1]");
 
 	@FindBy(xpath = "//div[@class='el-dbe-blog-extra box_extended ']//article")
 	List<WebElement> Articles_list;
@@ -78,9 +80,12 @@ public class New_Pages_Duplicates_Articles_Framework extends Abst {
 
 	}
 
-	public void new_pages_duplicates_Articles() {
+	public void new_pages_duplicates_Articles() throws InterruptedException {
+
+		String winHandleBefore = driver.getWindowHandle();
 
 		for (WebElement subcat : Catagories_new_pages_sub_cat_tabs) {
+
 			try {
 				String subcatlink = subcat.getAttribute("href");
 
@@ -92,9 +97,7 @@ public class New_Pages_Duplicates_Articles_Framework extends Abst {
 				String chordkey = Keys.chord(Keys.CONTROL, Keys.ENTER);
 
 				subcat.sendKeys(chordkey);
-				Pop_Up_Button pop = new Pop_Up_Button(driver);
 
-				pop.popBtn();
 			} catch (Exception ss) {
 
 			}
@@ -102,95 +105,74 @@ public class New_Pages_Duplicates_Articles_Framework extends Abst {
 
 		for (String winHandle : driver.getWindowHandles()) {
 			try {
-
 				driver.switchTo().window(winHandle);
 
-				if (Pagination.isDisplayed() == true) {
+				while (Next_button.isDisplayed() == true) {
 
-					while (Next_button.isDisplayed() == true) {
-						try {
+					List<WebElement> d = Articles_list;
+					ArrayList<String> ar = new ArrayList<String>();
 
-							List<WebElement> d = Articles_list;
-							ArrayList<String> ar = new ArrayList<String>();
+					for (WebElement dd : d) {
 
-							for (WebElement dd : d) {
+						ar.add(dd.getText());
+					}
 
-								ar.add(dd.getText());
+					for (int i = 0; i < ar.size(); i++) {
+						for (int j = i + 1; j < ar.size(); j++) {
+							if (ar.get(i).equals(ar.get(j))) {
+
+								System.out.println(ar.get(i));
 							}
-
-							for (int i = 0; i < ar.size(); i++) {
-								for (int j = i + 1; j < ar.size(); j++) {
-									if (ar.get(i).equals(ar.get(j))) {
-
-										System.out.println(ar.get(i));
-									}
-								}
-							}
-
-							waitforClick(Next_button);
-
-						} catch (Exception ss) {
-
 						}
 					}
 
-				}
-
-				else if ((Next_arrow_button.isDisplayed() == true) && (Article_box.isDisplayed() == true)) {
-
-					String num = Pagination_total_pages.getText();
-
-					int numbers = Integers.parseInt(num);
-
-					System.out.println(numbers);
-
-					for (int x = 0; x < numbers; x++) {
-
-						try {
-
-							List<WebElement> d = Cat_articles_list;
-							ArrayList<String> ar = new ArrayList<String>();
-
-							for (WebElement dd : d) {
-
-								ar.add(dd.getText());
-							}
-
-							for (int i = 0; i < ar.size(); i++) {
-								for (int j = i + 1; j < ar.size(); j++) {
-									if (ar.get(i).equals(ar.get(j))) {
-
-										System.out.println(ar.get(i));
-									}
-								}
-							}
-
-							waitforappear(caf);
-
-							waitforClick(Next_arrow_button);
-
-							Thread.sleep(5000);
-
-						} catch (Exception ss) {
-
-						}
-					}
+					waitforClick(Next_button);
 
 				}
-
-				else {
-
-					driver.switchTo().window(winHandle);
-
-				}
-
-			} catch (
-
-			Exception e) {
+			} catch (Exception sstt) {
 
 			}
-
 		}
 
+		driver.switchTo().window(winHandleBefore);
+
+		if ((Next_arrow_button.isDisplayed() == true) && (Article_box.isDisplayed() == true)) {
+
+			String num = Pagination_total_pages.getText();
+
+			int numbers = Integers.parseInt(num);
+
+			System.out.println(numbers);
+
+			for (int x = 1; x < numbers; x++) {
+
+				List<WebElement> d = Cat_articles_list;
+				ArrayList<String> ar = new ArrayList<String>();
+
+				for (WebElement dd : d) {
+
+					ar.add(dd.getText());
+					
+				}
+				
+
+				for (int i = 0; i < ar.size(); i++) {
+					for (int j = i + 1; j < ar.size(); j++) {
+						if (ar.get(i).equals(ar.get(j))) {
+
+							System.out.println(ar.get(i));
+						}
+					}
+				}
+				
+				
+				waitforappear(caf);
+
+				waitforClick(Next_arrow_button);
+
+				Thread.sleep(4000);
+
+			}
+		}
 	}
 }

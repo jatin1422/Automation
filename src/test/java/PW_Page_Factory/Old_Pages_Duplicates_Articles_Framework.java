@@ -64,6 +64,8 @@ public class Old_Pages_Duplicates_Articles_Framework extends Abst {
 
 		pop.popBtn();
 
+		String winHandleBefore = driver.getWindowHandle();
+
 		for (WebElement subcat : Catagories_old_pages_sub_cat_tabs) {
 
 			String subcatlink = subcat.getAttribute("href");

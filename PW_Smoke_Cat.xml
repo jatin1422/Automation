@@ -10,8 +10,7 @@
 			<class name="PW_Smoke.Endocrinology_Sub_Cat_Link" />
 			<class name="PW_Smoke.Infectious_Disease_Link_Check" />
 			<class name="PW_Smoke.OB_GYN_Link_Check" />
-			<class name="PW_Smoke.Pediatrics_Link_Check" />
-			
+			<class name="PW_Smoke.Pediatrics_Link_Check" />	
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

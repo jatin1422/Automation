@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PW_Duplicate_Articles.Duplicate_Article_Neurology">
+      <class name="EMS.Add_Project">
         <methods>
-          <include name="duplicate_articles_Neurology"/>
-          <include name="delete_Cookies"/>
+          <include name="form2"/>
+          <include name="form3"/>
           <include name="setup"/>
+          <include name="teardown"/>
+          <include name="add"/>
+          <include name="form"/>
         </methods>
-      </class> <!-- PW_Duplicate_Articles.Duplicate_Article_Neurology -->
+      </class> <!-- EMS.Add_Project -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

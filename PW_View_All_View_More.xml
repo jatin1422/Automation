@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="PW_Smoke.PW_Listeners"></listener>
 	</listeners>
-	<test parallel="classes" thread-count="5" name="Test">
+	<test parallel="classes" thread-count="4" name="Test">
 		<classes>
 			<class name="PW_Smoke.Deep_Dives_Peer_to_Peer_View_All" />
 			<class name="PW_Smoke.Gastroenterology_Subcat_Link_Check" />

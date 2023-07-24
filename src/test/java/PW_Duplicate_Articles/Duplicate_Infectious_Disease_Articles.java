@@ -3,22 +3,23 @@ package PW_Duplicate_Articles;
 import org.testng.annotations.Test;
 
 import PW_Page_Factory.Browser_Origin;
+import PW_Page_Factory.New_Pages_Duplicates_Articles_Framework;
 import PW_Page_Factory.Old_Pages_Duplicates_Articles_Framework;
 import PW_Page_Factory.Pop_Up_Button;
 
 public class Duplicate_Infectious_Disease_Articles extends Browser_Origin {
 
 	@Test
-	public void duplicate_articles_infectious_Disease() {
-		Old_Pages_Duplicates_Articles_Framework dp = new Old_Pages_Duplicates_Articles_Framework(driver);
-
+	public void duplicate_articles_infectious_Disease() throws InterruptedException {
+		New_Pages_Duplicates_Articles_Framework dp = new New_Pages_Duplicates_Articles_Framework(driver);
+		
 		dp.go("https://www.physiciansweekly.com/category/infectious-disease/");
 
 		Pop_Up_Button btn = new Pop_Up_Button(driver);
 
 		btn.popBtn();
 
-		dp.old_pages_duplicates_Articles();
+		dp.new_pages_duplicates_Articles();
 
 	}
 

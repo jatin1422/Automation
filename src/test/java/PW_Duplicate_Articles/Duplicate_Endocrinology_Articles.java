@@ -9,7 +9,7 @@ import PW_Page_Factory.Pop_Up_Button;
 public class Duplicate_Endocrinology_Articles extends Browser_Origin {
 
 	@Test
-	public void duplicate_articles_Endocrinology() {
+	public void duplicate_articles_Endocrinology() throws InterruptedException  {
 
 		New_Pages_Duplicates_Articles_Framework dp = new New_Pages_Duplicates_Articles_Framework(driver);
 

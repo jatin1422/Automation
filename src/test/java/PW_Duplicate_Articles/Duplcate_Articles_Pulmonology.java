@@ -9,7 +9,7 @@ import PW_Page_Factory.Pop_Up_Button;
 public class Duplcate_Articles_Pulmonology extends Browser_Origin {
 
 	@Test
-	public void duplicate_articles_Pulmonology() {
+	public void duplicate_articles_Pulmonology() throws InterruptedException {
 		New_Pages_Duplicates_Articles_Framework dp = new New_Pages_Duplicates_Articles_Framework(driver);
 
 		dp.go("https://www.physiciansweekly.com/category/pulmonology/");

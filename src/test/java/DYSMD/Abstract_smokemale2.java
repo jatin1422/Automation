@@ -44,7 +44,7 @@ public class Abstract_smokemale2 {
 		}
 
 
-		driver.get("https://www.dysmd.com/beta/front/user");
+		driver.get("https://www.dysmd.com/");
 
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//a[normalize-space()='Log In']")).click();

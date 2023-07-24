@@ -13,7 +13,7 @@ public class Duplicate_Articles_Urology  extends Browser_Origin {
 
 		Duplicate_Cat_Without_Sub_Cat dp = new Duplicate_Cat_Without_Sub_Cat(driver);
 
-		dp.go("https://www.physiciansweekly.com/category/urology/");
+		dp.go("https://www.physiciansweekly.com/category/pain/");
 
 		Pop_Up_Button pop = new Pop_Up_Button(driver);
 

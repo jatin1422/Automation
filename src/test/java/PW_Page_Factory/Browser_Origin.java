@@ -125,10 +125,11 @@ public class Browser_Origin {
 
 	}
 
-	@AfterMethod
+	/*@AfterClass
 	public void delete_Cookies() {
-		driver.manage().deleteAllCookies();
 
-	}
+		driver.quit();
+
+	}*/
 
 }

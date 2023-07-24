@@ -3,6 +3,7 @@ package PW_Smoke;
 import org.testng.annotations.Test;
 
 import PW_Page_Factory.Browser_Origin;
+import PW_Page_Factory.Catagories_New_Pages_Framework;
 import PW_Page_Factory.Catagories_Old_Pages_Framework;
 import PW_Page_Factory.Pop_Up_Button;
 
@@ -12,16 +13,14 @@ public class Oncology_Hematology_Link_Check extends Browser_Origin {
 
 	public void oncology_hematology_link_Check() throws InterruptedException {
 
-		Catagories_Old_Pages_Framework co = new Catagories_Old_Pages_Framework(driver);
+		Catagories_New_Pages_Framework co = new Catagories_New_Pages_Framework(driver);
 
 		co.go("https://www.physiciansweekly.com/category/oncology-hematology/");
+
+		driver.navigate().refresh();
 		
-		Pop_Up_Button pop = new Pop_Up_Button(driver);
+		co.new_cat_page_Linkcheck();
 
-		pop.popBtn();
-
-		co.old_cat_page_Linkcheck();
-
-		co.old_cat_sub_cat_tabs_link_Check();
+		co.new_cat_sub_cat_tabs_link_Check();
 	}
 }

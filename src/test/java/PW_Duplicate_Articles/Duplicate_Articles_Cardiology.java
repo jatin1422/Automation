@@ -10,7 +10,7 @@ import PW_Page_Factory.Pop_Up_Button;
 public class Duplicate_Articles_Cardiology extends Browser_Origin {
 
 	@Test
-	public void duplicate_articles_Cardiology() {
+	public void duplicate_articles_Cardiology() throws InterruptedException {
 
 		New_Pages_Duplicates_Articles_Framework dp = new New_Pages_Duplicates_Articles_Framework(driver);
 		

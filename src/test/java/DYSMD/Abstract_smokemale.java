@@ -43,7 +43,7 @@ public class Abstract_smokemale {
 			driver = new EdgeDriver();
 		}
 
-		driver.get("https://www.dysmd.com/beta/front/user");
+		driver.get("https://www.dysmd.com/");
 
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//a[normalize-space()='Log In']")).click();

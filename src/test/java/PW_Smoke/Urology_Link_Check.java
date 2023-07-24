@@ -14,8 +14,7 @@ public class Urology_Link_Check extends Browser_Origin {
 		Catagories_Old_Pages_Framework co = new Catagories_Old_Pages_Framework(driver);
 
 		co.go("https://www.physiciansweekly.com/category/urology/");
-		Pop_Up_Button pop = new Pop_Up_Button(driver);
-		pop.popBtn();
+	
 
 		co.old_cat_page_Linkcheck();
 

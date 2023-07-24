@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="PW_Smoke.Meeting_Coverage_View_All_View_More" class="method navigator-link" hash-for-method="meeting_Coverage">meeting_Coverage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +101,26 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="PW_Smoke.Search_Feed_Articles" class="method navigator-link" hash-for-method="Homepage">Homepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="PW_Smoke.Search_Feed_Articles" class="method navigator-link" hash-for-method="Pubmed">Pubmed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="PW_Smoke.Search_Feed_Articles" class="method navigator-link" hash-for-method="_2mm">_2mm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="PW_Smoke.Meeting_Coverage_View_All_View_More" class="method navigator-link" hash-for-method="meeting_Coverage">meeting_Coverage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="PW_Smoke.Allergy_Articals_Subscribe_letter" class="method navigator-link" hash-for-method="subscribe_letter_Form">subscribe_letter_Form</a> <!-- method navigator-link -->
@@ -132,9 +138,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">PW_Smoke.Search_Feed_Articles</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Homepage">
+                  </a> <!-- Homepage -->
+                  <span class="method-name">Homepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Pubmed">
+                  </a> <!-- Pubmed -->
+                  <span class="method-name">Pubmed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="_2mm">
+                  </a> <!-- _2mm -->
+                  <span class="method-name">_2mm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">PW_Smoke.Meeting_Coverage_View_All_View_More</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,42 +178,10 @@
                   <a name="meeting_Coverage">
                   </a> <!-- meeting_Coverage -->
                   <span class="method-name">meeting_Coverage</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4f84bff78cd3ddb790931729e54c072, get {url=https://www.physiciansweekly.com/meeting-coverage/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PRIMOT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52775}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52775/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f4f84bff78cd3ddb790931729e54c072
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:97)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
-	at PW_Page_Factory.Meeting_Coverage_View_All_View_More_Framework.go(Meeting_Coverage_View_All_View_More_Framework.java:65)
-	at PW_Smoke.Meeting_Coverage_View_All_View_More.meeting_Coverage(Meeting_Coverage_View_All_View_More.java:16)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	... 28 more
-... Removed 12 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -258,20 +261,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'subscribe_letter_Form')
-data.setCell(0, 2, 'PW_Smoke.Allergy_Articals_Subscribe_letter')
-data.setCell(0, 3, 234131);
+data.setCell(0, 1, 'meeting_Coverage')
+data.setCell(0, 2, 'PW_Smoke.Meeting_Coverage_View_All_View_More')
+data.setCell(0, 3, 276113);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'meeting_Coverage')
-data.setCell(1, 2, 'PW_Smoke.Meeting_Coverage_View_All_View_More')
-data.setCell(1, 3, 180017);
+data.setCell(1, 1, '_2mm')
+data.setCell(1, 2, 'PW_Smoke.Search_Feed_Articles')
+data.setCell(1, 3, 136245);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Pubmed')
+data.setCell(2, 2, 'PW_Smoke.Search_Feed_Articles')
+data.setCell(2, 3, 117966);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'subscribe_letter_Form')
+data.setCell(3, 2, 'PW_Smoke.Allergy_Articals_Subscribe_letter')
+data.setCell(3, 3, 111947);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Homepage')
+data.setCell(4, 2, 'PW_Smoke.Search_Feed_Articles')
+data.setCell(4, 3, 80908);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -304,81 +319,55 @@ return data;
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">PW_Smoke.Search_Feed_Articles</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">PW_Smoke.Meeting_Coverage_View_All_View_More</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">PW_Smoke.Meeting_Coverage_View_All_View_More</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">PW_Smoke.Search_Feed_Articles</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">4 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">PW_Smoke.Meeting_Coverage_View_All_View_More</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">meeting_Coverage</span>
+                <span class="method-start">3912 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">PW_Smoke.Allergy_Articals_Subscribe_letter</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">subscribe_letter_Form</span>
-                <span class="method-start">3477 ms</span>
+                <span class="method-start">3930 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">PW_Smoke.Search_Feed_Articles</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Homepage</span>
-                <span class="method-start">3477 ms</span>
+                <span class="method-start">4029 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">PW_Smoke.Meeting_Coverage_View_All_View_More</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">meeting_Coverage</span>
-                <span class="method-start">3585 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">PW_Smoke.Search_Feed_Articles</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">delete_Cookies</span>
-                <span class="method-start">83851 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">84007 ms</span>
+                <span class="method-start">85436 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">_2mm</span>
-                <span class="method-start">84930 ms</span>
+                <span class="method-start">86426 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">PW_Smoke.Meeting_Coverage_View_All_View_More</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">delete_Cookies</span>
-                <span class="method-start">209846 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">PW_Smoke.Allergy_Articals_Subscribe_letter</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">delete_Cookies</span>
-                <span class="method-start">237740 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">PW_Smoke.Search_Feed_Articles</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">delete_Cookies</span>
-                <span class="method-start">245210 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">245226 ms</span>
+                <span class="method-start">222863 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Pubmed</span>
+                <span class="method-start">223890 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

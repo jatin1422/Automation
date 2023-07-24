@@ -16,9 +16,7 @@ public class Ophthalmology_Link_Check extends Browser_Origin {
 
 		co.go("https://www.physiciansweekly.com/category/ophthalmology/");
 		
-		Pop_Up_Button pop = new Pop_Up_Button(driver);
-
-		pop.popBtn();
+	
 
 		co.new_cat_page_Linkcheck();
 

@@ -1,95 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T15:46:07 IST" name="Suite" finished-at="2023-07-05T15:50:04 IST" duration-ms="237822">
+  <suite started-at="2023-07-24T16:12:43 IST" name="Suite" finished-at="2023-07-24T16:18:25 IST" duration-ms="342124">
     <groups>
     </groups>
-    <test started-at="2023-07-05T15:46:07 IST" name="Allergy_Articals_Subscribe_letter" finished-at="2023-07-05T15:50:04 IST" duration-ms="237822">
-      <class name="PW_Smoke.Meeting_Coverage_View_All_View_More">
-        <test-method is-config="true" signature="setup()[pri:0, instance:PW_Smoke.Meeting_Coverage_View_All_View_More@4470fbd6]" started-at="2023-07-05T15:46:07 IST" name="setup" finished-at="2023-07-05T15:46:10 IST" duration-ms="3581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="meeting_Coverage()[pri:0, instance:PW_Smoke.Meeting_Coverage_View_All_View_More@4470fbd6]" started-at="2023-07-05T15:46:10 IST" name="meeting_Coverage" finished-at="2023-07-05T15:49:10 IST" duration-ms="180017" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4f84bff78cd3ddb790931729e54c072, get {url=https://www.physiciansweekly.com/meeting-coverage/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PRIMOT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52775}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52775/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f4f84bff78cd3ddb790931729e54c072]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f4f84bff78cd3ddb790931729e54c072, get {url=https://www.physiciansweekly.com/meeting-coverage/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PRIMOT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52775}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52775/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f4f84bff78cd3ddb790931729e54c072
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:97)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
-at PW_Page_Factory.Meeting_Coverage_View_All_View_More_Framework.go(Meeting_Coverage_View_All_View_More_Framework.java:65)
-at PW_Smoke.Meeting_Coverage_View_All_View_More.meeting_Coverage(Meeting_Coverage_View_All_View_More.java:16)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- meeting_Coverage -->
-        <test-method is-config="true" signature="delete_Cookies()[pri:0, instance:PW_Smoke.Meeting_Coverage_View_All_View_More@4470fbd6]" started-at="2023-07-05T15:49:37 IST" name="delete_Cookies" finished-at="2023-07-05T15:49:37 IST" duration-ms="160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete_Cookies -->
-      </class> <!-- PW_Smoke.Meeting_Coverage_View_All_View_More -->
+    <test started-at="2023-07-24T16:12:43 IST" name="Allergy_Articals_Subscribe_letter" finished-at="2023-07-24T16:17:23 IST" duration-ms="280370">
       <class name="PW_Smoke.Allergy_Articals_Subscribe_letter">
-        <test-method is-config="true" signature="setup()[pri:0, instance:PW_Smoke.Allergy_Articals_Subscribe_letter@14bdbc74]" started-at="2023-07-05T15:46:07 IST" name="setup" finished-at="2023-07-05T15:46:10 IST" duration-ms="3476" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW_Smoke.Allergy_Articals_Subscribe_letter@2f953efd]" started-at="2023-07-24T16:12:43 IST" name="setup" finished-at="2023-07-24T16:12:47 IST" duration-ms="3930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="subscribe_letter_Form()[pri:0, instance:PW_Smoke.Allergy_Articals_Subscribe_letter@14bdbc74]" started-at="2023-07-05T15:46:10 IST" name="subscribe_letter_Form" finished-at="2023-07-05T15:50:04 IST" duration-ms="234131" status="PASS">
+        <test-method signature="subscribe_letter_Form()[pri:0, instance:PW_Smoke.Allergy_Articals_Subscribe_letter@2f953efd]" started-at="2023-07-24T16:12:47 IST" name="subscribe_letter_Form" finished-at="2023-07-24T16:14:39 IST" duration-ms="111947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subscribe_letter_Form -->
-        <test-method is-config="true" signature="delete_Cookies()[pri:0, instance:PW_Smoke.Allergy_Articals_Subscribe_letter@14bdbc74]" started-at="2023-07-05T15:50:04 IST" name="delete_Cookies" finished-at="2023-07-05T15:50:04 IST" duration-ms="22" status="PASS">
+      </class> <!-- PW_Smoke.Allergy_Articals_Subscribe_letter -->
+      <class name="PW_Smoke.Meeting_Coverage_View_All_View_More">
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW_Smoke.Meeting_Coverage_View_All_View_More@49b2a47d]" started-at="2023-07-24T16:12:43 IST" name="setup" finished-at="2023-07-24T16:12:47 IST" duration-ms="3911" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delete_Cookies -->
-      </class> <!-- PW_Smoke.Allergy_Articals_Subscribe_letter -->
+        </test-method> <!-- setup -->
+        <test-method signature="meeting_Coverage()[pri:0, instance:PW_Smoke.Meeting_Coverage_View_All_View_More@49b2a47d]" started-at="2023-07-24T16:12:47 IST" name="meeting_Coverage" finished-at="2023-07-24T16:17:23 IST" duration-ms="276113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- meeting_Coverage -->
+      </class> <!-- PW_Smoke.Meeting_Coverage_View_All_View_More -->
     </test> <!-- Allergy_Articals_Subscribe_letter -->
+    <test started-at="2023-07-24T16:12:43 IST" name="Searchfeed" finished-at="2023-07-24T16:18:25 IST" duration-ms="342124">
+      <class name="PW_Smoke.Search_Feed_Articles">
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW_Smoke.Search_Feed_Articles@4149c063]" started-at="2023-07-24T16:12:43 IST" name="setup" finished-at="2023-07-24T16:12:47 IST" duration-ms="4024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Homepage()[pri:1, instance:PW_Smoke.Search_Feed_Articles@4149c063]" started-at="2023-07-24T16:12:47 IST" name="Homepage" finished-at="2023-07-24T16:14:08 IST" duration-ms="80908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW_Smoke.Search_Feed_Articles@4149c063]" started-at="2023-07-24T16:14:08 IST" name="setup" finished-at="2023-07-24T16:14:09 IST" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="_2mm()[pri:2, instance:PW_Smoke.Search_Feed_Articles@4149c063]" started-at="2023-07-24T16:14:09 IST" name="_2mm" finished-at="2023-07-24T16:16:25 IST" duration-ms="136245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _2mm -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:PW_Smoke.Search_Feed_Articles@4149c063]" started-at="2023-07-24T16:16:26 IST" name="setup" finished-at="2023-07-24T16:16:27 IST" duration-ms="1027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Pubmed()[pri:3, instance:PW_Smoke.Search_Feed_Articles@4149c063]" started-at="2023-07-24T16:16:27 IST" name="Pubmed" finished-at="2023-07-24T16:18:25 IST" duration-ms="117966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pubmed -->
+      </class> <!-- PW_Smoke.Search_Feed_Articles -->
+    </test> <!-- Searchfeed -->
   </suite> <!-- Suite -->
 </testng-results>

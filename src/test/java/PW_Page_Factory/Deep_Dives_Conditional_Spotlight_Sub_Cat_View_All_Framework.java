@@ -97,18 +97,22 @@ public class Deep_Dives_Conditional_Spotlight_Sub_Cat_View_All_Framework extends
 				 * System.out.println(driver.getCurrentUrl()); }
 				 */
 
-				waitforappear(view_all_btn);
 				if (View_all_btn.isDisplayed() == true) {
 
 					View_all_btn.click();
+				}
+				
+				else {
+					
+					continue;
 				}
 			} catch (Exception e) {
 
 			}
 
-		}
+		}}
 
-		Set<String> tab = driver.getWindowHandles();
+	/*	Set<String> tab = driver.getWindowHandles();
 
 		Iterator<String> tabs = tab.iterator();
 
@@ -118,7 +122,7 @@ public class Deep_Dives_Conditional_Spotlight_Sub_Cat_View_All_Framework extends
 
 			if (driver.switchTo().window(tabs.next()).getCurrentUrl().equals(URL2)) {
 
-				waitforClick(View_all_btn);
+				View_all_btn.click();
 
 				break;
 
@@ -126,7 +130,7 @@ public class Deep_Dives_Conditional_Spotlight_Sub_Cat_View_All_Framework extends
 
 		}
 
-	}
+	}*/
 
 	public void go() {
 

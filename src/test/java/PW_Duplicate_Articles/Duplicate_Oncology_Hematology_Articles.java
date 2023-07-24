@@ -10,9 +10,9 @@ import PW_Page_Factory.Pop_Up_Button;
 public class Duplicate_Oncology_Hematology_Articles extends Browser_Origin {
 
 	@Test
-	public void duplicate_articles_Oncology_Hematology_Articles() {
+	public void duplicate_articles_Oncology_Hematology_Articles() throws InterruptedException {
 
-		Old_Pages_Duplicates_Articles_Framework dp = new Old_Pages_Duplicates_Articles_Framework(driver);
+		New_Pages_Duplicates_Articles_Framework dp = new New_Pages_Duplicates_Articles_Framework(driver);
 
 		dp.go("https://www.physiciansweekly.com/category/oncology-hematology/");
 
@@ -20,7 +20,7 @@ public class Duplicate_Oncology_Hematology_Articles extends Browser_Origin {
 
 		btn.popBtn();
 
-		dp.old_pages_duplicates_Articles();
+		dp.new_pages_duplicates_Articles();
 
 	}
 

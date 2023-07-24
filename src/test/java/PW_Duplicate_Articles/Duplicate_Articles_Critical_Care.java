@@ -9,7 +9,7 @@ import PW_Page_Factory.Pop_Up_Button;
 public class Duplicate_Articles_Critical_Care extends Browser_Origin {
 
 	@Test
-	public void duplicate_articles_critical_Care() {
+	public void duplicate_articles_critical_Care() throws InterruptedException {
 
 		New_Pages_Duplicates_Articles_Framework dp = new New_Pages_Duplicates_Articles_Framework(driver);
 

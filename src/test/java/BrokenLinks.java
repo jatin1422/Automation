@@ -34,6 +34,8 @@ public class BrokenLinks {
 		chromeoptions.addArguments("--start-maximized");
 
 		chromeoptions.addArguments("--remote-allow-origins=*");
+		
+		chromeoptions.addArguments("incognito");
 
 		driver = new ChromeDriver(chromeoptions);
 
@@ -41,10 +43,9 @@ public class BrokenLinks {
 
 		driver.get(
 
-				"https://pwdev2.physiciansweekly.com/page/1/?s");
+				"https://www.physiciansweekly.com/category/oncology-hematology/");
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='password_protected_pass']")))
-				.sendKeys("pw@123!");
+	
 
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='wp-submit']"))).click();
 
@@ -81,46 +82,9 @@ public class BrokenLinks {
 				int status = con.getResponseCode();
 
 				// System.out.println(status);
-				if ((status > 100) && (status < 400)) {
-					System.out.println("Actual link: " + ss.getText()+ link + " & Status code: " + status);
+	
 
-					if ((status < 200)) {
-						System.out.println("Actual link: " + ss.getText()+ link + " & Status code: " + status);
-
-					}
-
-					else if ((status < 300)) {
-						System.out.println("Actual link: " + ss.getText()+ link + " & Status code: " + status);
-
-					}
-
-					else if ((status < 400)) {
-						System.out.println("Actual link: " + ss.getText()+ link + " & Status code: " + status);
-
-					}
-
-					else if ((status < 500)) {
-						System.out.println("Actual link: " + ss.getText() + link + " & Status code: " + status);
-
-					}
-
-				} else if ((status < 600)) {
-					System.out.println("Actual link: " + ss.getText() + link + " & Status code: " + status);
-
-				}
-
-				else if ((status < 700)) {
-					System.out.println("Actual link: " + ss.getText() + link + " & Status code: " + status);
-
-				}
-
-				else if (status == 404) {
-
-					System.out.println("Broken link: " + ss.getText() + link + " & Status code: " + status);
-
-				}
-
-				else if (status > 700) {
+				 if (status == 404) {
 
 					System.out.println("Above 404 code : " + ss.getText() + link + " & Status code: " + status);
 

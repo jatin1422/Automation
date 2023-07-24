@@ -14,11 +14,14 @@ public class Meeting_Coverage_View_All_View_More extends Browser_Origin {
 		Meeting_Coverage_View_All_View_More_Framework mcvv = new Meeting_Coverage_View_All_View_More_Framework(driver);
 
 		mcvv.go();
+		
 		Pop_Up_Button pop = new Pop_Up_Button(driver);
 
 		pop.popBtn();
 
 		mcvv.viewAll();
+
+		mcvv.view_all_Btn();
 
 	}
 
