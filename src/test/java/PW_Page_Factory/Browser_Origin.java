@@ -49,7 +49,7 @@ public class Browser_Origin {
 		Properties prop = new Properties();
 
 		FileInputStream fi = new FileInputStream(
-				"C:\\Users\\Primotech\\eclipse-workspace\\Primo_Maven\\src\\test\\java\\PW\\browser.properties");
+				"C:\Users\HP\eclipse-workspace\Automation\src\test\java\PW\browser.properties");
 
 		prop.load(fi);
 
